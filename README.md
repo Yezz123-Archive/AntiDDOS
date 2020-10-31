@@ -19,8 +19,6 @@ Today there are several languages in the ML family; the three most prominent are
 ## • Notice
 All codes written using python language in both of folder ML and Math.
 
-be Nice with codes and donate me if that possible. ✌
-
 And help me in issues. 👼
 
 ## • License
