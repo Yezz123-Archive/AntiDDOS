@@ -1,37 +1,32 @@
-## Welcome to GitHub Pages
+<p align="center">
+<img src="https://github.com/yezz123/yezz123/blob/master/img/img02.gif">
+</p>
 
-You can use the [editor on GitHub](https://github.com/yezz123/AntiDDOS/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<p>The Anti-DDoS uses behavioural analysis, traffic signatures, rate limiting, and other such techniques to identify malicious traffic per source-address.</p>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```sh
+# For debugging use iptables -v.
+IPTABLES="/sbin/iptables"
+IP6TABLES="/sbin/ip6tables"
+MODPROBE="/sbin/modprobe"
+RMMOD="/sbin/rmmod"
+ARP="/usr/sbin/arp"
+```
+```sh
+LOG="LOG --log-level debug --log-tcp-sequence --log-tcp-options"
+LOG="$LOG --log-ip-options"
+RLIMIT="-m limit --limit 3/s --limit-burst 8"
+```
+```sh
+PHIGH="1024:65535"
+PSSH="1000:1023"
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yezz123/AntiDDOS/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+<p align="center">
+    <a href="https://yassertahiri.medium.com/">
+    <img alt="Medium" src="https://img.shields.io/badge/Medium%20-%23000000.svg?&style=for-the-badge&logo=Medium&logoColor=white"/></a>
+    <a href="https://twitter.com/THyasser1">
+    <img alt="Twitter" src="https://img.shields.io/badge/Twitter%20-%231DA1F2.svg?&style=for-the-badge&logo=Twitter&logoColor=white"</a>
+    <a href="https://discord.gg/crNvkTYPYG">
+    <img alt="Discord" src="https://img.shields.io/badge/Discord%20-%237289DA.svg?&style=for-the-badge&logo=discord&logoColor=white"/></a>
+</p>
